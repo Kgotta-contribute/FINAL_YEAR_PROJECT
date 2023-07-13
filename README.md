@@ -6,7 +6,7 @@ Graduating in 2024, gotta make this good! 70% of the code summarized in a Report
   -With Lung Cancer<br>
 <img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/cropped_130.png?raw=true" alt="Image Description" style="margin-right: 150px; width="300" height="300">
   <img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/130.png?raw=true" alt="Image Description" style="margin-right: 150px; width="300" height="221"><br><br>
-    -Without Lung Cancer
+ <br>   -Without Lung Cancer
 <img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/116.png?raw=true" alt="Image Description" style="margin-right: 150px; width="300" height="300">
   <img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/110.png?raw=true" alt="Image Description" style="margin-right: 150px; width="300" height="300">
 </div>
@@ -15,7 +15,8 @@ Graduating in 2024, gotta make this good! 70% of the code summarized in a Report
 <br>
 <div style="display: flex;">
   -No class Augmentation (No class is without cancer)
-<img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/No_AUG.png?raw=true" alt="Image Description" style="margin-right: 150px; width="300" height="300">
+<img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/No_AUG.png
+?raw=true" alt="Image Description" style="margin-right: 150px; width="300" height="300">
     -Yes class Augmentation (Yes class is with cancer)
 <img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/YES_AUG.png?raw=true" alt="Image Description" style="margin-right: 150px; width="300" height="300">
 </div>
