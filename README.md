@@ -5,9 +5,9 @@ Graduating in 2024, gotta make this good! 70% of the code summarized in a Report
 <div style="display: flex;">
   -With Lung Cancer<br>
 <img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/cropped_130.png?raw=true" alt="Image Description" style="margin-right: 150px; width="300" height="300">
-  <img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/130.png?raw=true" alt="Image Description" style="margin-right: 150px; width="300" height="221"><br><br>
+  <img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/130.png?raw=true" alt="Image Description" style="margin-right: 150px;" width="300" height="221"><br><br>
  <br>   -Without Lung Cancer
-<img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/116.png?raw=true" alt="Image Description" style="margin-right: 150px; width="300" height="300">
+<img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/116.png?raw=true" alt="Image Description" style="margin-right: 150px;" width="300" height="300">
   <img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/110.png?raw=true" alt="Image Description" style="margin-right: 150px; width="300" height="300">
 </div>
 <br><br>
