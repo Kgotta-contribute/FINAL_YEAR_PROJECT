@@ -17,13 +17,13 @@ Graduating in 2024, gotta make this good! 70% of the code summarized in a Report
   -No class Augmentation (No class is without cancer)
 <img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/No_AUG.png" alt="Image Description" style="margin-right: 150px;" width="300" height="300">
     -Yes class Augmentation (Yes class is with cancer)
-<img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/YES_AUG.png?raw=true" alt="Image Description" style="margin-right: 150px;" width="300" height="300">
+<img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/YES_AUG.jpg" alt="Image Description" style="margin-right: 150px;" width="300" height="300">
 </div>
 <br>
 
 <div style="display: flex;">
   -TOP VIEW OF LUNGS FROM "RadiAnt DICOM Viewer"
-<img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/Screenshot%20(182).pngn" style="margin-right: 150px;" width="300" height="300">
+<img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/Screenshot%20(182).png" style="margin-right: 150px;" width="300" height="300">
   - Any kind of grain or smokiness in images shows the presence of Lung Cancer
   <img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/Screenshot%20(183).png" alt="Image Description" style="margin-right: 150px;" width="300" height="221">
   
