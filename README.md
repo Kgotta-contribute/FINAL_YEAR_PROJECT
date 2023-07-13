@@ -15,8 +15,7 @@ Graduating in 2024, gotta make this good! 70% of the code summarized in a Report
 <br>
 <div style="display: flex;">
   -No class Augmentation (No class is without cancer)
-<img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/No_AUG.png
-?raw=true" alt="Image Description" style="margin-right: 150px;" width="300" height="300">
+<img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/No_AUG.png" alt="Image Description" style="margin-right: 150px;" width="300" height="300">
     -Yes class Augmentation (Yes class is with cancer)
 <img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/YES_AUG.png?raw=true" alt="Image Description" style="margin-right: 150px;" width="300" height="300">
 </div>
@@ -34,3 +33,13 @@ Graduating in 2024, gotta make this good! 70% of the code summarized in a Report
   <img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/186.png?raw=true" alt="Image Description" style="margin-right: 150px;" width="300" height="300">
 </div>
 <br>
+
+<br>
+<div style="display: flex;">
+  -EPOCH RESULTS OBTAINED SO FAR
+<img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/EPOCH.png" alt="Image Description" style="margin-right: 150px;" width="300" height="300">
+  <img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/EPOCH2.png" alt="Image Description" style="margin-right: 150px;" width="300" height="300">
+<img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/EPOCH_res.png" alt="Image Description" style="margin-right: 150px;" width="300" height="300">
+</div>
+<br>
+
