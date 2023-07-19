@@ -31,13 +31,16 @@ Graduating in 2024, gotta make this good! 70% of the code summarized in a Report
 ### - With Inner Organs
 <br><img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/Screenshot%20(185).png" alt="Image Description" style="margin-right: 150px;">
 <img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/Screenshot%20(186).png" alt="Image Description" style="margin-right: 150px;">
+<br><br>
 <br>
 
 ### - EPOCH RESULTS OBTAINED SO FAR
-
+<br><br>
 <img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/EPOCH.png" alt="Image Description" style="margin-right: 150px;">
+<br><br>
 <img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/EPOCH2.png" alt="Image Description" style="margin-right: 150px;">
+<br><br>
 <img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/EPOCH_res.png" alt="Image Description" style="margin-right: 150px;">
-
+<br><br>
 <br>
 
