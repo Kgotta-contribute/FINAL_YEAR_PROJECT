@@ -29,8 +29,8 @@ Graduating in 2024, gotta make this good! 70% of the code summarized in a Report
 <img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/Screenshot%20(184).png" alt="Image Description" style="margin-right: 150px;" width="600px" height="700px">
 
 ### - With Inner Organs
-<br><img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/Screenshot%20(185).png" alt="Image Description" style="margin-right: 150px;">
-<img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/Screenshot%20(186).png" alt="Image Description" style="margin-right: 150px;">
+<br><img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/Screenshot%20(185).png" alt="Image Description" style="margin-right: 150px;" width="600px" height="700px">
+<img src="https://raw.githubusercontent.com/Kgotta-contribute/FINAL_YEAR_PROJECT/9ed3017973b20d5f0fa6df1fb6e38c7514088035/Images/Screenshot%20(186).png" alt="Image Description" style="margin-right: 150px;" width="600px" height="700px">
 <br><br>
 <br>
 
