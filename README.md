@@ -1,6 +1,7 @@
 # FINAL_YEAR_PROJECT
 ## The topic of Our Final Year Project is "LUNG CANCER DETECTION USING Convolutional Neural Network (CNN) "
 Graduating in 2024, gotta make this good! 70% of the code summarized in a Report till the Finale comes !
+Here is the name of the source code that I've created: "LUNG_TUMOR_DETECT"
 
 ### - With Lung Cancer
 <img src="https://github.com/Kgotta-contribute/FINAL_YEAR_PROJECT/blob/main/Images/cropped_130.png?raw=true" alt="Image Description" style="margin-right: 150px;">
