@@ -1,0 +1,17 @@
+# Large datasets and image directories
+dataset_png/
+Lung Images/
+Lung-PET-CT-Dx-Annotations-XML-Files-rev12222020/
+*.dcm
+*.dcm.tmp
+*.zip
+*.tcia
+*.log
+
+# Python cache & Jupyter checkpoints
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.vscode/
+.idea/
