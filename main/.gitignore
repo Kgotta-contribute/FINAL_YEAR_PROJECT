@@ -3,8 +3,10 @@ dataset_png/
 Lung Images/
 Lung-PET-CT-Dx-Annotations-XML-Files-rev12222020/
 *.dcm
+TCIA_Data_Retriever*.zip
+Lung-PET-CT-Dx*.zip
+!sample_images/all_crops.zip
 *.dcm.tmp
-*.zip
 *.tcia
 *.log
 
