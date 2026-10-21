@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.git
+.gitignore
+.dockerignore
+*.md
+.ipynb_checkpoints
+all_crops.zip
+annotated_dataset.csv
+statistics-clinical-20201221.xlsx

@@ -135,8 +135,16 @@ def run_inference_on_array(orig_bgr):
 
 @app.post("/predict")
 async def predict_endpoint(file: UploadFile = File(...)):
-    """Accepts uploaded PNG, JPG, or DICOM (.dcm) files."""
+    """Accepts uploaded PNG, JPG, or DICOM (.dcm) files with file-size safeguards."""
+    # Safety constraint: enforce maximum 25 MB payload to protect memory
+    MAX_FILE_SIZE = 25 * 1024 * 1024
     contents = await file.read()
+    if len(contents) > MAX_FILE_SIZE:
+        raise HTTPException(
+            status_code=413,
+            detail="Payload too large. Maximum supported scan size is 25 MB."
+        )
+
     filename = file.filename.lower()
 
     if filename.endswith(".dcm"):

@@ -1,0 +1,20 @@
+services:
+  lung-tumor-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: lung-tumor-app:latest
+    container_name: lung-tumor-app
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PORT=8000
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 4G
+        reservations:
+          memory: 1G
