@@ -6,13 +6,15 @@ Final Year Project: Lung-PET-CT-Dx AI Diagnostic System
 import os
 import io
 import time
+import json
+import asyncio
 import base64
 import cv2
 import numpy as np
 import pydicom
 import torch
 from fastapi import FastAPI, File, UploadFile, HTTPException
-from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 from train_detector import DualHeadLungCNN, IMG_SIZE, CLASS_NAMES
@@ -166,6 +168,57 @@ async def predict_endpoint(file: UploadFile = File(...)):
             raise HTTPException(status_code=400, detail="Invalid image file uploaded.")
 
     return run_inference_on_array(orig_bgr)
+
+@app.post("/predict/stream")
+async def predict_stream_endpoint(file: UploadFile = File(...)):
+    """
+    Streaming FastAPI endpoint (Server-Sent Events) providing real-time diagnostic
+    telemetry and progressive inference updates as the scan moves through the CAD pipeline.
+    """
+    MAX_FILE_SIZE = 25 * 1024 * 1024
+    contents = await file.read()
+    if len(contents) > MAX_FILE_SIZE:
+        raise HTTPException(
+            status_code=413,
+            detail="Payload too large. Maximum supported scan size is 25 MB."
+        )
+
+    filename = file.filename.lower()
+
+    async def event_generator():
+        yield f"data: {json.dumps({'stage': 'upload', 'message': 'Scan received and validated successfully.', 'progress': 20})}\n\n"
+        await asyncio.sleep(0.01)
+
+        try:
+            if filename.endswith(".dcm"):
+                yield f"data: {json.dumps({'stage': 'dicom_parsing', 'message': 'Extracting DICOM metadata & applying Hounsfield lung windowing...', 'progress': 40})}\n\n"
+                await asyncio.sleep(0.01)
+                dcm_io = io.BytesIO(contents)
+                ds = pydicom.dcmread(dcm_io)
+                slope = getattr(ds, "RescaleSlope", 1)
+                intercept = getattr(ds, "RescaleIntercept", 0)
+                norm_gray = apply_lung_window(ds.pixel_array, slope, intercept)
+                orig_bgr = cv2.cvtColor(norm_gray, cv2.COLOR_GRAY2BGR)
+            else:
+                yield f"data: {json.dumps({'stage': 'preprocessing', 'message': 'Decoding standard scan & normalizing tensor dimensions...', 'progress': 40})}\n\n"
+                await asyncio.sleep(0.01)
+                nparr = np.frombuffer(contents, np.uint8)
+                orig_bgr = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+                if orig_bgr is None:
+                    yield f"data: {json.dumps({'error': 'Invalid image format.'})}\n\n"
+                    return
+
+            yield f"data: {json.dumps({'stage': 'inference', 'message': 'Executing Dual-Head CNN (Localization + Subtyping)...', 'progress': 75})}\n\n"
+            await asyncio.sleep(0.01)
+
+            # Perform PyTorch inference
+            result = run_inference_on_array(orig_bgr)
+
+            yield f"data: {json.dumps({'stage': 'complete', 'message': 'Inference complete.', 'progress': 100, 'result': result})}\n\n"
+        except Exception as ex:
+            yield f"data: {json.dumps({'error': str(ex)})}\n\n"
+
+    return StreamingResponse(event_generator(), media_type="text/event-stream")
 
 @app.get("/api/sample/{sample_key}")
 async def get_sample(sample_key: str):
