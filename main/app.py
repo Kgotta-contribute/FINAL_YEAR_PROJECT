@@ -232,6 +232,15 @@ async def get_sample(sample_key: str):
         raise HTTPException(status_code=404, detail="Sample image file missing on disk.")
 
     orig_bgr = cv2.imread(img_path)
+    if orig_bgr is None:
+        try:
+            orig_bgr = cv2.imdecode(np.fromfile(img_path, dtype=np.uint8), cv2.IMREAD_COLOR)
+        except Exception:
+            pass
+
+    if orig_bgr is None:
+        raise HTTPException(status_code=500, detail="Unable to decode sample scan image.")
+
     return run_inference_on_array(orig_bgr)
 
 @app.get("/", response_class=HTMLResponse)

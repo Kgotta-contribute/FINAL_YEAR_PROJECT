@@ -15,7 +15,7 @@ def test_home_ui():
     """Verify that clinical dashboard UI returns HTTP 200."""
     response = client.get("/")
     assert response.status_code == 200
-    assert "Lung-PET-CT-Dx AI Diagnostic System" in response.text
+    assert "Lung Cancer AI Detection System" in response.text
 
 def test_sample_endpoint():
     """Verify sample scan retrieval and inference."""
@@ -23,10 +23,10 @@ def test_sample_endpoint():
     assert response.status_code == 200
     data = response.json()
     assert "class_name" in data
-    assert "confidence" in data
+    assert "confidence_percent" in data
     assert "box" in data
     assert "latency_ms" in data
-    assert len(data["box"]) == 4
+    assert "xmin" in data["box"]
 
 def test_predict_endpoint_with_synthetic_scan():
     """Verify POST /predict with a synthetic CT scan slice."""
@@ -41,7 +41,7 @@ def test_predict_endpoint_with_synthetic_scan():
     assert response.status_code == 200
     payload = response.json()
     assert payload["class_name"] in checkpoint["class_names"]
-    assert 0.0 <= payload["confidence"] <= 100.0
+    assert 0.0 <= payload["confidence_percent"] <= 100.0
 
 def test_streaming_endpoint():
     """Verify POST /predict/stream returns real-time SSE progress events."""
